@@ -1,0 +1,17 @@
+{% load static %}
+<html>
+	<head>
+		<title>Blogging App</title>
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital@0;1&family=Roboto&family=Unbounded&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="{% static 'css/base.css' %}">
+	</head>
+	<body>
+		<header>
+			<h1><a href="{% url 'home' %}">Blogging App</a></h1>
+		</header>
+		<div>
+			{% block content %}
+			{% endblock content %}
+		</div>
+	</body>
+</html>
